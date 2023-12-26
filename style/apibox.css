@@ -1,0 +1,292 @@
+.apibox{
+    background-color: white;
+    height: 150px;
+    margin-top: -170px;
+    width: 85%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.FlyBoxes{
+  align-items: center;
+  justify-content: center;
+}
+
+.api-btns{
+    position: relative;
+    display: flex;
+}
+
+.api-inp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ways-num{
+    position: absolute;
+    top: 20px;
+    right: 15%;
+}
+
+.bbttnn{
+  position: relative;
+  top: 20px;
+  right: 2%;
+  margin-bottom: 2%;
+}
+
+.pricing-toggle {
+    border: 1px solid #8b8b8b;
+    border-radius: 30px;
+    padding: 3px 3px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 13.3%;
+    margin-top: 20px;
+}
+
+.Toggler{
+    display: none;
+}
+
+.pricing-toggle input[type="radio"]+label {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    height: 35px;
+    width: 50%;
+    transition: all 200ms ease;
+}
+
+.pricing-toggle input[type="radio"]:checked+label {
+    background-color: #723c80;
+    color: white;
+    height: 35px;
+}
+
+input[type=radio] {
+  --s: 1em;     /* control the size */
+  --c: #723c80; /* the active color */
+  
+  height: var(--s);
+  aspect-ratio: 1;
+  border: calc(var(--s)/8) solid #939393;
+  padding: calc(var(--s)/8);
+  background: 
+     radial-gradient(farthest-side,var(--c) 94%,#0000) 
+     50%/0 0 no-repeat content-box;
+  border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+  transition: .3s;
+}
+input[type=radio]:checked {
+  border-color: var(--c);
+  background-size: 100% 100%;
+}
+
+input[type=radio]:disabled {
+  background: 
+     linear-gradient(#939393 0 0) 
+     50%/100% 20% no-repeat content-box;
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+label {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin:5px 0;
+  cursor: pointer;
+}
+
+.date-inp{
+  width: 450px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.spdate-inp{
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.submit-search{
+  background-color: #723c80;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  height: 45px;
+  width: 20%;
+}
+
+.strloc{
+  width: 30%;
+  border: 1px solid #8b8b8b;
+  border-radius: 15px;
+  height: 45px;
+  background-color: white;
+  color: #858585;
+  position: relative;
+  z-index: 2;
+}
+
+.strloc-options{
+  background-color: white;
+  height: 200px;
+  overflow-y: scroll;
+  width: 95%;
+  top: 50px;
+  display: none;
+  position: absolute;
+}
+
+.AirSigleLink{
+  color: black;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+  height: 30px;
+  margin-bottom: 0px;
+}
+
+.AirSigleLink:hover{
+  color: white;
+  background-color: #723c80;
+  cursor: pointer;
+}
+
+.AirSigleLink2{
+  color: black;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+  height: 30px;
+  margin-bottom: 0px;
+}
+
+.AirSigleLink2:hover{
+  color: white;
+  background-color: #723c80;
+  cursor: pointer;
+}
+
+.switch-btn{
+  border: none;
+  color: #cc00ff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgb(236, 234, 234);
+  margin-left: -12px;
+  margin-right: -12px;
+  z-index: 5;
+  position: relative;
+}
+
+.datepick{
+  border-radius: 0px 15px 15px 0px;
+  border: 1px solid #8b8b8b;
+  height: 45px;
+  text-align: center;
+  width: 100%;
+}
+
+.spdatepick{
+  border-radius: 15px;
+  border: 1px solid #8b8b8b;
+  height: 45px;
+  text-align: center;
+  width: 100%;
+}
+
+.datepickEnd{
+  border-radius: 15px 0px 0px 15px;
+  border: 1px solid #8b8b8b;
+  border-right: none;
+  height: 45px;
+  text-align: center;
+  width: 100%;
+}
+
+.number-of-pass-inp{
+  border-radius: 15px;
+  border: 1px solid #8b8b8b;
+  height: 45px;
+  text-align: center;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.PassNumber{
+  color: #939393;
+}
+
+.set-number{
+  background-color: white;
+  border: 1px solid #8b8b8b;
+  border-radius: 15px;
+  width: 110%;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  top: 12px;
+  right: -12px;
+  padding: 10px 0px;
+  display: inline-flex;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.single-row{
+  display: flex;
+  gap: 12px;
+  padding-right: 5px;
+  justify-content: center;
+}
+
+.plus{
+  border: none;
+  background-color: white;
+  color: #70008d;
+}
+
+.minus{
+  border: none;
+  background-color: white;
+  color: #70008d;
+}
+
+.age-row-title{
+  color: #858585;
+}
+
+.age-discrib{
+  font-size: 11px;
+  color: #8b8b8b;
+}
+
+.age-submit{
+  border: none;
+  background-color: #723c80;
+  color: white;
+  width: 25%;
+  height: 40px;
+  border-radius: 8px;
+}

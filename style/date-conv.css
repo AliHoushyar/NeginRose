@@ -1,0 +1,93 @@
+.date-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.date-claendar{
+    position:relative;
+    left: 0;
+    top: 0;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.main-date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 83px;
+}
+
+#input-container input[type=date]{
+    width: 160%;
+    height: 30px;
+    text-align: center;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px dashed #8b8b8b;
+    border-left: none;
+}
+
+#input-container input[type=text]{
+    width: 160%;
+    margin-left: -20px;
+    height: 30px;
+    text-align: center;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px dashed #8b8b8b;
+    border-left: none;
+}
+
+#input-container input[type=button]{
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #723c80;
+    border: none;
+    border-radius: 15px 0px 0px 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+#time-output , #time-output-2 {
+    width:92%;
+    border-radius: 15px;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    place-items: center;
+    direction: ltr;
+    gap: 10px;
+    border: 1px dashed #8b8b8b;
+    margin-top: 5px;
+}
+#time-output span , #time-output-2 span {
+    font-size: 14px;
+    color:rgb(209, 10, 10);
+    opacity: 0;
+}
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

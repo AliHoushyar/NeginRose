@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نگین رز پاژ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/slider.css">
+    <link rel="stylesheet" href="./style/card-slide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/card-slider.css">
+    <link rel="stylesheet" href="./style/special-tour.css">
+    <link rel="stylesheet" href="./style/cards.css">
+    <link rel="stylesheet" href="./style/date-conv.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/apibox.css">
+    <link rel="stylesheet" href="./date/kamadatepicker.min.css">
+</head>
+<body>
+    <div id="myimg" class="site-top">
+        <nav class="navbar navbar-expand-lg mynaveffect">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img width="90px" height="60px" src="./img/logo.png" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="dropdown marrg">
+                        <div class="dropdown-title">
+                            <span>تور</span>
+                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg> 
+                        </div>
+                        <div class="dropdown-content-container">
+                            <div class="dropdown-content">
+                                <div class="dropdown-from-left mydropdown-item">
+                                    <div class="dropdown-from-left-title">
+                                        <span class="dropdown-from-left-text">تور داخلی</span>
+                                        <svg class="dropdown-from-left-text-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                        </svg>                                  
+                                    </div>
+                                    <div class="dropdown-from-left-container">
+                                        <div class="dropdown-from-left-content">
+                                            <div class="dropdown-from-left-link toplink">
+                                                <span class="links">&#160 کیش</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link">
+                                                <span class="links">&#160 مشهد</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link lastlink">
+                                                <span class="links">&#160 قشم</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-from-left mydropdown-item">
+                                    <div class="dropdown-from-left-title">
+                                        <span class="dropdown-from-left-text">تور خارجی</span>
+                                        <svg class="dropdown-from-left-text-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                        </svg>                                  
+                                    </div>
+                                    <div class="dropdown-from-left-container">
+                                        <div class="dropdown-from-left-content">
+                                            <div class="dropdown-from-left-link toplink">
+                                                <span class="links">&#160 گرجستان</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link">
+                                                <span class="links">&#160 ترکیه</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link lastlink">
+                                                <span class="links">&#160 امارات</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mydropdown-item dropdown-link mydropdown-item-last">
+                                    <span>جست و جوی تور</span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link" href="#">پرواز</a>
+                    </div>
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link" href="#">هتل ها</a>
+                    </div>
+                    <button class="dropdown marrg">
+                        <div class="dropdown-title">
+                            <span>ویزا</span>
+                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg> 
+                        </div>
+                        <div class="dropdown-content-container">
+                            <div class="dropdown-content">
+                                <div class="dropdown-from-left mydropdown-item">
+                                    <div class="dropdown-from-left-title">
+                                        <span class="dropdown-from-left-text">آسیا</span>
+                                        <svg class="dropdown-from-left-text-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                        </svg>                                  
+                                    </div>
+                                    <div class="dropdown-from-left-container">
+                                        <div class="dropdown-from-left-content">
+                                            <div class="dropdown-from-left-link toplink">
+                                                <span class="links">&#160 آذربایجان</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link">
+                                                <span class="links">&#160 ارمنستان</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link lastlink">
+                                                <span class="links">&#160 چین</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-from-left mydropdown-item">
+                                    <div class="dropdown-from-left-title">
+                                        <span class="dropdown-from-left-text">آفریقا</span>
+                                        <svg class="dropdown-from-left-text-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                        </svg>                                  
+                                    </div>
+                                    <div class="dropdown-from-left-container">
+                                        <div class="dropdown-from-left-content">
+                                            <div class="dropdown-from-left-link toplink">
+                                                <span class="links">&#160 آفریقای جنوبی</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link">
+                                                <span class="links">&#160 بورکینافاسو</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link">
+                                                <span class="links">&#160 نیجریه</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link lastlink">
+                                                <span class="links">&#160 کنیا</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-from-left mydropdown-item">
+                                    <div class="dropdown-from-left-title">
+                                        <span class="dropdown-from-left-text">آمریکا</span>
+                                        <svg class="dropdown-from-left-text-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                        </svg>                                  
+                                    </div>
+                                    <div class="dropdown-from-left-container">
+                                        <div class="dropdown-from-left-content">
+                                            <div class="dropdown-from-left-link toplink">
+                                                <span class="links">&#160 آرژانتین</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link">
+                                                <span class="links">&#160 برزیل</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link lastlink">
+                                                <span class="links">&#160 کانادا</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-from-left mydropdown-item">
+                                    <div class="dropdown-from-left-title">
+                                        <span class="dropdown-from-left-text">اروپا</span>
+                                        <svg class="dropdown-from-left-text-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                        </svg>                                  
+                                    </div>
+                                    <div class="dropdown-from-left-container">
+                                        <div class="dropdown-from-left-content">
+                                            <div class="dropdown-from-left-link toplink">
+                                                <span class="links">&#160 ایتالیا</span>
+                                            </div>
+                                            <div class="dropdown-from-left-link">
+                                                <span class="links">&#160 شینگن</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-from-left mydropdown-item">
+                                    <div class="dropdown-from-left-title">
+                                        <span class="dropdown-from-left-text">اقیانوسیه</span>
+                                        <svg class="dropdown-from-left-text-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                        </svg>                                  
+                                    </div>
+                                    <div class="dropdown-from-left-container">
+                                        <div class="dropdown-from-left-content">
+                                            <div class="dropdown-from-left-link toplink">
+                                                <span class="links">&#160 نیوزیلند</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mydropdown-item dropdown-link dropdown-item-last">
+                                    <span>جست و جوی ویزا</span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link" href="#">قطار</a>
+                    </div>
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link" href="#">اتوبوس</a>
+                    </div>
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link" href="#">تفریحات</a>
+                    </div>
+                    <div class="nav-item navbar-link links marrg">
+                        <a class="nav-link" href="#">خودرو</a>
+                    </div>
+                    <button class="dropdown marrg">
+                        <div class="dropdown-title">
+                            <span>آژانس ما</span>
+                            <svg class="dropdown-title-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg> 
+                        </div>
+                        <div class="dropdown-content-container">
+                            <div class="dropdown-content">
+                                <div class="mydropdown-item dropdown-link">
+                                    <span>درباره ما</span>
+                                </div>
+                                <div class="mydropdown-item dropdown-link">
+                                    <span>قوانین و مقررات</span>
+                                </div>
+                                <div class="mydropdown-item dropdown-link">
+                                    <span>مدیران و پرسنل</span>
+                                </div>
+                                <div class="mydropdown-item dropdown-link">
+                                    <span>فرم استخدام</span>
+                                </div>
+                                <div class="mydropdown-item dropdown-link">
+                                    <span>نمایندگی ها</span>
+                                </div>
+                                <div class="mydropdown-item dropdown-link">
+                                    <span>ویدیو ها</span>
+                                </div>
+                                <div class="mydropdown-item dropdown-link dropdown-item-last">
+                                    <span>تماس با ما</span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="navbar-btns">
+                    <div class="nav-btn-stay">
+                        <svg class="login_icon"xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                          </svg>                      
+                        <a href="./login-form/index.html" class="signin_link">ورود | ثبت نام</a>                    
+                    </div>
+                    <div class="nav-btn basket">                      
+                        <a href="#" class="signin_link">پیگیری خرید</a>                    
+                    </div>
+                    <div class="language-element">
+                        <button onclick="myFunction()" class="language-btn"></button>
+                        <div class="language-drop dropdown">
+                            <div id="language-dropdown" class="dropdown-content-container">
+                                <div class="dropdown-content">
+                                    <div class="mydropdown-item dropdown-link lang-item">
+                                        <img style="border-radius: 15px;" width="24px" height="24px" src="./img/Flag_of_the_United_Kingdom.png" alt="eng-flag">
+                                        <span>&#160 english</span>
+                                    </div>
+                                    <div class="mydropdown-item dropdown-link dropdown-item-last lang-item">
+                                        <img style="margin-left: 10px; border-radius: 15px;" width="24px" height="24px" src="./img/arab-flag.png" alt="arab-flag">
+                                        <span>&#160 العربی</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="show()" class="navbar-toggler btn-tooggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+            </div>
+        </nav>
+        <div class="container-fluid myfluid">
+            <div class="mycontain">
+                <div class="myrow row">
+                    <button onclick="atvie(1)" class="mycol">
+                        <img id="airplain-btn" class="slider-logo" src="./icons/plain-logo.png" alt="palin">
+                        <p>هواپیما</p>
+                    </button>
+                    <button onclick="atvie(2)" class="mycol">
+                        <img id="hotel-btn" class="slider-logo" src="./icons/hotel-logo.png" alt="palin">
+                        <p>هتل</p>
+                    </button>
+                    <button onclick="atvie(3)" class="mycol">
+                        <img id="fly-btn" class="slider-logo" src="./icons/fly-logo.png" alt="palin">
+                        <p>پرواز+هتل</p>
+                    </button>
+                    <button onclick="atvie(4)" class="mycol">
+                        <img id="train-btn" class="slider-logo" src="./icons/train-logo.png" alt="palin">
+                        <p>قطار</p>
+                    </button>
+                    <button onclick="atvie(5)" class="mycol">
+                        <img id="bus-btn" class="slider-logo" src="./icons/bus-logo.png" alt="palin">
+                        <p>اتوبوس</p>
+                    </button>
+                    <button onclick="atvie(6)" class="mycol">
+                        <img id="ins-btn" class="slider-logo" src="./icons/Insurance-logo.png" alt="palin">
+                        <p>بیمه</p>
+                    </button>
+                    <button onclick="atvie(7)" class="mycol">
+                        <img id="tour-btn" class="slider-logo" src="./icons/tour-logo.png" alt="palin">
+                        <p>تور</p>
+                    </button>
+                    <button onclick="atvie(8)" class="mycol">
+                        <img id="vac-btn" class="slider-logo" src="./icons/vacation-logo.png" alt="palin">
+                        <p>تفریحات</p>
+                    </button>
+                    <button onclick="atvie(9)" class="mycol">
+                        <img id="rent-btn" class="slider-logo" src="./icons/rental-logo.png" alt="palin">
+                        <p>اجاره خودرو</p>
+                    </button>
+                    <button onclick="atvie(10)" class="mycol">
+                        <img id="pass-btn" class="slider-logo" src="./icons/pass-logo.png" alt="palin">
+                        <p style="font-size: 10px;">محاجرت و ویزا</p>
+                    </button>
+                    <button onclick="atvie(11)" class="mycol">
+                        <img id="trs-btn" class="slider-logo" src="./icons/transfer-logo.png" alt="palin">
+                        <p>ترنسفر</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid apibox">
+            <div class="api-btns">
+                <div class="pricing-toggle">
+                    <input type="radio" id="pricing-toggle-inner" name="Airpricing" class="Toggler" value="inner" checked>
+                    <label class="radio-button" for="pricing-toggle-inner">داخلی</label>
+                    <input type="radio" id="pricing-toggle-outer" name="Airpricing" class="Toggler" value="outer">
+                    <label class="radio-button" for="pricing-toggle-outer">خارجی</label>
+                </div>
+                <div class="ways-num">
+                    <label><input type="radio" name="numway" value="one" checked>یک طرفه</label>
+                    <label><input type="radio" name="numway" value="two">دو طرفه</label>
+                </div>
+            </div>
+            <div class="api-inp">
+                <button class="strloc" onclick="showoptions('Air')">
+                    <div class="strloc-maintext">
+                        <span id="AirSelectSpan">انتخاب مبدا</span>
+                    </div>
+                    <div id="AirOptDiv" class="strloc-options">
+                        <p class="AirSigleLink" onclick="change(1,'Air')">تهران</p>
+                        <p class="AirSigleLink" onclick="change(2,'Air')">مشهد</p>
+                        <p class="AirSigleLink" onclick="change(3,'Air')">اصفهان</p>
+                        <p class="AirSigleLink" onclick="change(4,'Air')">تبریز</p>
+                        <p class="AirSigleLink" onclick="change(5,'Air')">شیراز</p>
+                        <p class="AirSigleLink" onclick="change(6,'Air')">بندرعباس</p>
+                        <p class="AirSigleLink" onclick="change(7,'Air')">کیش</p>
+                        <p class="AirSigleLink" onclick="change(8,'Air')">قم</p>
+                    </div>
+                </button>
+                <button class="switch-btn" onclick="switchspan('Air')">
+                    <svg style="width: 20px; height:20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                </button>
+                <button class="strloc" onclick="showoptions2('Air')">
+                    <div class="strloc-maintext">
+                        <span id="AirSelectSpan2">انتخاب مقصد</span>
+                    </div>
+                    <div id="AirOptDiv2" class="strloc-options">
+                        <p class="AirSigleLink2" onclick="change2(1,'Air')">تهران</p>
+                        <p class="AirSigleLink2" onclick="change2(2,'Air')">مشهد</p>
+                        <p class="AirSigleLink2" onclick="change2(3,'Air')">اصفهان</p>
+                        <p class="AirSigleLink2" onclick="change2(4,'Air')">تبریز</p>
+                        <p class="AirSigleLink2" onclick="change2(5,'Air')">شیراز</p>
+                        <p class="AirSigleLink2" onclick="change2(6,'Air')">بندرعباس</p>
+                        <p class="AirSigleLink2" onclick="change2(7,'Air')">کیش</p>
+                        <p class="AirSigleLink2" onclick="change2(8,'Air')">قم</p>
+                    </div>
+                </button>
+                <div class="date-inp">
+                    <input type="text" name="datee" id="AirStrTime" class="datepick">
+                    <input type="text" name="datee" id="AirEndTime" class="datepickEnd">
+                </div>
+                <div class="number-of-pass-inp" onclick="AirShowSetNumber()">
+                    <span class="PassNumber" id="AirAdultNum"></span>
+                    <span class="PassNumber" id="AirKidNum"></span>
+                    <span class="PassNumber" id="AirChildNum"></span>
+                    <div id="AirSetNumber" class="set-number">
+                        <div class="single-row">
+                            <span class="age-row-title">بزرگسال<span class="age-discrib">(بزرگتر از 12 سال)</span></span>
+                            <button class="plus" onclick="AirIncrease('adult')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="AirAdult"></span>
+                            <button class="minus" onclick="AirDecrese('adult')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <div class="single-row">
+                            <span class="age-row-title">کودک<span class="age-discrib">(بین 2 الی 12 سال)</span></span>
+                            <button style="margin-right: 6.5px;" class="plus" onclick="AirIncrease('kid')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="AirKid"></span>
+                            <button class="minus" onclick="AirDecrese('kid')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <div class="single-row">
+                            <span class="age-row-title">نوزاد<span class="age-discrib">(کمتر از 2 سال)</span></span>
+                            <button style="margin-right: 29.5px;" class="plus" onclick="AirIncrease('child')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="AirChild"></span>
+                            <button class="minus" onclick="AirDecrese('child')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <button class="age-submit">تایید</button>
+                    </div>
+                </div>
+                <button class="submit-search">جستجو</button>
+            </div>
+        </div>
+        <div class="container-fluid apibox">
+            <div class="api-btns">
+                <div class="pricing-toggle">
+                    <input type="radio" id="pricing-toggle-inner2" name="Trpricing" class="Toggler" value="inner" checked>
+                    <label class="radio-button" for="pricing-toggle-inner2">داخلی</label>
+                    <input type="radio" id="pricing-toggle-outer2" name="Trpricing" class="Toggler" value="outer">
+                    <label class="radio-button" for="pricing-toggle-outer2">خارجی</label>
+                </div>
+            </div>
+            <div class="api-inp">
+                <button class="strloc" onclick="showoptions2('Tr')">
+                    <div class="strloc-maintext">
+                        <span id="TrSelectSpan2">انتخاب مقصد</span>
+                    </div>
+                    <div id="TrOptDiv2" class="strloc-options">
+                        <p class="TrSigleLink2" onclick="change2(1,'Tr')">تهران</p>
+                        <p class="TrSigleLink2" onclick="change2(2,'Tr')">مشهد</p>
+                        <p class="TrSigleLink2" onclick="change2(3,'Tr')">اصفهان</p>
+                        <p class="TrSigleLink2" onclick="change2(4,'Tr')">تبریز</p>
+                        <p class="TrSigleLink2" onclick="change2(5,'Tr')">شیراز</p>
+                        <p class="TrSigleLink2" onclick="change2(6,'Tr')">بندرعباس</p>
+                        <p class="TrSigleLink2" onclick="change2(7,'Tr')">کیش</p>
+                        <p class="TrSigleLink2" onclick="change2(8,'Tr')">قم</p>
+                    </div>
+                </button>
+                <div class="date-inp">
+                    <input type="text" name="datee" id="TrStrTime" class="datepick">
+                    <input type="text" name="datee" id="TrEndTime" class="datepickEnd">
+                </div>
+                <div class="number-of-pass-inp" onclick="TrShowSetNumber()">
+                    <span class="PassNumber" id="TrAdultNum"></span>
+                    <span class="PassNumber" id="TrKidNum"></span>
+                    <span class="PassNumber" id="TrChildNum"></span>
+                    <div id="TrSetNumber" class="set-number">
+                        <div class="single-row">
+                            <span class="age-row-title">بزرگسال<span class="age-discrib">(بزرگتر از 12 سال)</span></span>
+                            <button class="plus" onclick="TrIncrease('adult')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="TrAdult"></span>
+                            <button class="minus" onclick="TrDecrese('adult')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <div class="single-row">
+                            <span class="age-row-title">کودک<span class="age-discrib">(بین 2 الی 12 سال)</span></span>
+                            <button style="margin-right: 6.5px;" class="plus" onclick="TrIncrease('kid')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="TrKid"></span>
+                            <button class="minus" onclick="TrDecrese('kid')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <div class="single-row">
+                            <span class="age-row-title">نوزاد<span class="age-discrib">(کمتر از 2 سال)</span></span>
+                            <button style="margin-right: 29.5px;" class="plus" onclick="TrIncrease('child')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="TrChild"></span>
+                            <button class="minus" onclick="TrDecrese('child')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <button class="age-submit">تایید</button>
+                    </div>
+                </div>
+                <button class="submit-search">جستجو</button>
+            </div>
+        </div>
+        <div class="container-fluid apibox FlyBoxes">
+            <div class="api-inp">
+                <button class="strloc" onclick="showoptions('Fly')">
+                    <div class="strloc-maintext">
+                        <span id="FlySelectSpan">انتخاب مبدا</span>
+                    </div>
+                    <div id="FlyOptDiv" class="strloc-options">
+                        <p class="FlySigleLink" onclick="change(1,'Fly')">تهران</p>
+                        <p class="FlySigleLink" onclick="change(2,'Fly')">مشهد</p>
+                        <p class="FlySigleLink" onclick="change(3,'Fly')">اصفهان</p>
+                        <p class="FlySigleLink" onclick="change(4,'Fly')">تبریز</p>
+                        <p class="FlySigleLink" onclick="change(5,'Fly')">شیراز</p>
+                        <p class="FlySigleLink" onclick="change(6,'Fly')">بندرعباس</p>
+                        <p class="FlySigleLink" onclick="change(7,'Fly')">کیش</p>
+                        <p class="FlySigleLink" onclick="change(8,'Fly')">قم</p>
+                    </div>
+                </button>
+                <button class="strloc" onclick="showoptions2('Fly')">
+                    <div class="strloc-maintext">
+                        <span id="FlySelectSpan2">انتخاب مقصد</span>
+                    </div>
+                    <div id="FlyOptDiv2" class="strloc-options">
+                        <p class="FlySigleLink2" onclick="change2(1,'Fly')">تهران</p>
+                        <p class="FlySigleLink2" onclick="change2(2,'Fly')">مشهد</p>
+                        <p class="FlySigleLink2" onclick="change2(3,'Fly')">اصفهان</p>
+                        <p class="FlySigleLink2" onclick="change2(4,'Fly')">تبریز</p>
+                        <p class="FlySigleLink2" onclick="change2(5,'Fly')">شیراز</p>
+                        <p class="FlySigleLink2" onclick="change2(6,'Fly')">بندرعباس</p>
+                        <p class="FlySigleLink2" onclick="change2(7,'Fly')">کیش</p>
+                        <p class="FlySigleLink2" onclick="change2(8,'Fly')">قم</p>
+                    </div>
+                </button>
+                <div class="date-inp">
+                    <input type="text" name="datee" id="FlyStrTime" class="datepick">
+                    <input type="text" name="datee" id="FlyEndTime" class="datepickEnd">
+                </div>
+                <div class="number-of-pass-inp" onclick="FlyShowSetNumber()">
+                    <span class="PassNumber" id="FlyAdultNum"></span>
+                    <span class="PassNumber" id="FlyKidNum"></span>
+                    <span class="PassNumber" id="FlyChildNum"></span>
+                    <div id="FlySetNumber" class="set-number">
+                        <div class="single-row">
+                            <span class="age-row-title">بزرگسال<span class="age-discrib">(بزرگتر از 12 سال)</span></span>
+                            <button class="plus" onclick="FlyIncrease('adult')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="FlyAdult"></span>
+                            <button class="minus" onclick="FlyDecrese('adult')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <div class="single-row">
+                            <span class="age-row-title">کودک<span class="age-discrib">(بین 2 الی 12 سال)</span></span>
+                            <button style="margin-right: 6.5px;" class="plus" onclick="FlyIncrease('kid')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="FlyKid"></span>
+                            <button class="minus" onclick="FlyDecrese('kid')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <div class="single-row">
+                            <span class="age-row-title">نوزاد<span class="age-discrib">(کمتر از 2 سال)</span></span>
+                            <button style="margin-right: 29.5px;" class="plus" onclick="FlyIncrease('child')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="FlyChild"></span>
+                            <button class="minus" onclick="FlyDecrese('child')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <button class="age-submit">تایید</button>
+                    </div>
+                </div>
+                <button class="submit-search">جستجو</button>
+            </div>
+        </div>
+        <div class="container-fluid apibox">
+            <div class="api-btns bbttnn">
+                <label><input type="radio" name="Honumway" value="one" checked>یک طرفه</label>
+                <label><input type="radio" name="Honumway" value="two">دو طرفه</label>
+            </div>
+            <div class="api-inp">
+                <button class="strloc" onclick="showoptions('Ho')">
+                    <div class="strloc-maintext">
+                        <span id="HoSelectSpan">انتخاب مبدا</span>
+                    </div>
+                    <div id="HoOptDiv" class="strloc-options">
+                        <p class="HoSigleLink" onclick="change(1,'Ho')">تهران</p>
+                        <p class="HoSigleLink" onclick="change(2,'Ho')">مشهد</p>
+                        <p class="HoSigleLink" onclick="change(3,'Ho')">اصفهان</p>
+                        <p class="HoSigleLink" onclick="change(4,'Ho')">تبریز</p>
+                        <p class="HoSigleLink" onclick="change(5,'Ho')">شیراز</p>
+                        <p class="HoSigleLink" onclick="change(6,'Ho')">بندرعباس</p>
+                        <p class="HoSigleLink" onclick="change(7,'Ho')">کیش</p>
+                        <p class="HoSigleLink" onclick="change(8,'Ho')">قم</p>
+                    </div>
+                </button>
+                <button class="switch-btn" onclick="switchspan('Ho')">
+                    <svg style="width: 20px; height:20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                    </svg>
+                </button>
+                <button class="strloc" onclick="showoptions2('Ho')">
+                    <div class="strloc-maintext">
+                        <span id="HoSelectSpan2">انتخاب مقصد</span>
+                    </div>
+                    <div id="HoOptDiv2" class="strloc-options">
+                        <p class="HoSigleLink2" onclick="change2(1,'Ho')">تهران</p>
+                        <p class="HoSigleLink2" onclick="change2(2,'Ho')">مشهد</p>
+                        <p class="HoSigleLink2" onclick="change2(3,'Ho')">اصفهان</p>
+                        <p class="HoSigleLink2" onclick="change2(4,'Ho')">تبریز</p>
+                        <p class="HoSigleLink2" onclick="change2(5,'Ho')">شیراز</p>
+                        <p class="HoSigleLink2" onclick="change2(6,'Ho')">بندرعباس</p>
+                        <p class="HoSigleLink2" onclick="change2(7,'Ho')">کیش</p>
+                        <p class="HoSigleLink2" onclick="change2(8,'Ho')">قم</p>
+                    </div>
+                </button>
+                <div class="date-inp">
+                    <input type="text" name="datee" id="HoStrTime" class="datepick">
+                    <input type="text" name="datee" id="HoEndTime" class="datepickEnd">
+                </div>
+                <div class="number-of-pass-inp" onclick="HoShowSetNumber()">
+                    <span class="PassNumber" id="HoAdultNum"></span>
+                    <span class="PassNumber" id="HoKidNum"></span>
+                    <span class="PassNumber" id="HoChildNum"></span>
+                    <div id="HoSetNumber" class="set-number">
+                        <div class="single-row">
+                            <span class="age-row-title">بزرگسال<span class="age-discrib">(بزرگتر از 12 سال)</span></span>
+                            <button class="plus" onclick="HoIncrease('adult')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="HoAdult"></span>
+                            <button class="minus" onclick="HoDecrese('adult')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <div class="single-row">
+                            <span class="age-row-title">کودک<span class="age-discrib">(بین 2 الی 12 سال)</span></span>
+                            <button style="margin-right: 6.5px;" class="plus" onclick="HoIncrease('kid')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="HoKid"></span>
+                            <button class="minus" onclick="HoDecrese('kid')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <div class="single-row">
+                            <span class="age-row-title">نوزاد<span class="age-discrib">(کمتر از 2 سال)</span></span>
+                            <button style="margin-right: 29.5px;" class="plus" onclick="HoIncrease('child')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                            <span id="HoChild"></span>
+                            <button class="minus" onclick="HoDecrese('child')">
+                                <svg style="width: 24px; height:24px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <button class="age-submit">تایید</button>
+                    </div>
+                </div>
+                <button class="submit-search">جستجو</button>
+            </div>
+        </div>
+        <div class="container-fluid apibox FlyBoxes">
+            <div class="api-inp">
+                <button class="strloc" onclick="showoptions('Bus')">
+                    <div class="strloc-maintext">
+                        <span id="BusSelectSpan">انتخاب مبدا</span>
+                    </div>
+                    <div id="BusOptDiv" class="strloc-options">
+                        <p class="BusSigleLink" onclick="change(1,'Bus')">تهران</p>
+                        <p class="BusSigleLink" onclick="change(2,'Bus')">مشهد</p>
+                        <p class="BusSigleLink" onclick="change(3,'Bus')">اصفهان</p>
+                        <p class="BusSigleLink" onclick="change(4,'Bus')">تبریز</p>
+                        <p class="BusSigleLink" onclick="change(5,'Bus')">شیراز</p>
+                        <p class="BusSigleLink" onclick="change(6,'Bus')">بندرعباس</p>
+                        <p class="BusSigleLink" onclick="change(7,'Bus')">کیش</p>
+                        <p class="BusSigleLink" onclick="change(8,'Bus')">قم</p>
+                    </div>
+                </button>
+                <button class="strloc" onclick="showoptions2('Bus')">
+                    <div class="strloc-maintext">
+                        <span id="BusSelectSpan2">انتخاب مقصد</span>
+                    </div>
+                    <div id="BusOptDiv2" class="strloc-options">
+                        <p class="BusSigleLink2" onclick="change2(1,'Bus')">تهران</p>
+                        <p class="BusSigleLink2" onclick="change2(2,'Bus')">مشهد</p>
+                        <p class="BusSigleLink2" onclick="change2(3,'Bus')">اصفهان</p>
+                        <p class="BusSigleLink2" onclick="change2(4,'Bus')">تبریز</p>
+                        <p class="BusSigleLink2" onclick="change2(5,'Bus')">شیراز</p>
+                        <p class="BusSigleLink2" onclick="change2(6,'Bus')">بندرعباس</p>
+                        <p class="BusSigleLink2" onclick="change2(7,'Bus')">کیش</p>
+                        <p class="BusSigleLink2" onclick="change2(8,'Bus')">قم</p>
+                    </div>
+                </button>
+                <div class="date-inp">
+                    <input type="text" name="datee" id="BusStrTime" class="spdatepick">
+                </div>
+                <button class="submit-search">جستجو</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main-container">
+        <div class="container-fluid card-slider">
+            <h3 class="card-slider-title">جستجوی سریع پرواز</h3>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left first"></i>
+                <ul class="mycarosel">
+                    <li class="mycard">
+                        <div class="mycard-title">بلیط هواپیما از مبدا <span>شیراز</span> به</div>
+                        <div class="hrdivid"></div>
+                        <div class="mycard-btns">
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>مشهد</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>کیش</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>اصفهان</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>شیراز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>تبریز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>بندرعباس</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mycard">
+                        <div class="mycard-title">بلیط هواپیما از مبدا <span>تبریز</span> به</div>
+                        <div class="hrdivid"></div>
+                        <div class="mycard-btns">
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>مشهد</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>کیش</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>اصفهان</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>شیراز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>تبریز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>بندرعباس</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mycard">
+                        <div class="mycard-title">بلیط هواپیما از مبدا <span>بندرعباس</span> به</div>
+                        <div class="hrdivid"></div>
+                        <div class="mycard-btns">
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>مشهد</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>کیش</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>اصفهان</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>شیراز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>تبریز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>بندرعباس</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mycard">
+                        <div class="mycard-title">بلیط هواپیما از مبدا <span>تهران</span> به</div>
+                        <div class="hrdivid"></div>
+                        <div class="mycard-btns">
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>مشهد</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>کیش</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>اصفهان</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>شیراز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>تبریز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>بندرعباس</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mycard">
+                        <div class="mycard-title">بلیط هواپیما از مبدا <span>مشهد</span> به</div>
+                        <div class="hrdivid"></div>
+                        <div class="mycard-btns">
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>مشهد</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>کیش</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>اصفهان</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>شیراز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>تبریز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>بندرعباس</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mycard">
+                        <div class="mycard-title">بلیط هواپیما از مبدا <span>کیش</span> به</div>
+                        <div class="hrdivid"></div>
+                        <div class="mycard-btns">
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>مشهد</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>کیش</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>اصفهان</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>شیراز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>تبریز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>بندرعباس</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mycard">
+                        <div class="mycard-title">بلیط هواپیما از مبدا <span>اصفهان</span> به</div>
+                        <div class="hrdivid"></div>
+                        <div class="mycard-btns">
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>مشهد</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>کیش</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>اصفهان</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>شیراز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                            <div class="btn-row">
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>تبریز</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                                <div class="card-btn">
+                                    <div class="main-title">
+                                        <img src="./icons/plain.png" alt="logoplain" width="25px" height="25px">
+                                        <span>بندرعباس</span>
+                                    </div>
+                                    <svg style="width: 18px; height: 18px; color:#723c80;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+                                    </svg>  
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right first"></i>
+            </div>
+        </div>
+        <div id="special-tour-slider" class="container-fluid special-slider">
+            <h3 class="card-slider-title">تورهای ویژه</h3>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left second"></i>
+                <ul class="mycarosel2">
+                    <li class="mycard special-tour-card">
+                        <div class="special-card">
+                            <div class="special-card-img">
+                                <img src="./img/tbilisi.jpg" alt="tbilisi">
+                            </div>
+                            <div class="special-card-texts">
+                                <div class="special-card-texts-title">
+                                    <h4>تور تفلیس از تهران 3 شب</h4>
+                                </div>
+                                <div class="special-card-texts-timer">
+                                    <svg style="width: 18px; height: 18px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>مدت تور : 3 شب</span>
+                                </div>
+                                <div class="special-card-texts-date">
+                                    <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+                                        <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>تاریخ حرکت : 1402/06/14</span>
+                                </div>
+                            </div>
+                            <div class="special-card-btn-contain">
+                                <button class="special-card-btn"><a href="#">جزئیات تور</a></button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right second"></i>
+            </div>
+        </div>
+        <div class="container-fluid tour-card">
+            <div class="cards-container container-fluid">
+                <div class="travel-club-card">
+                    <div class="travel-club-card-img">
+                        <img src="./icons/travel-club.png" alt="TCicon">
+                        <a class="travel-club-card-title" href="#">باشگاه مسافران</a>
+                    </div>
+                    <div class="travel-club-card-text">
+                        <span>دنیای پر رقابت امروز، تنها شرکت هایی موفق خواهند بود که در مسیر شناخت نیاز مسافران خود گام برداشته باشند</span>
+                    </div>
+                    <div class="travel-club-card-btns">
+                        <button class="travel_btn">ورود</button>
+                        <button class="travel_btn">ثبت نام</button>
+                    </div>
+                </div>
+                <div class="travel-club-card">
+                    <div class="travel-club-card-img">
+                        <img src="./icons/date.png" alt="TCicon">
+                        <a class="travel-club-card-title" href="#">تبدیل تاریخ</a>
+                    </div>
+                    <div class="date-container">
+                        <div class="date-claendar">
+                            <div class="main-date">
+                                <div id="input-container">
+                                    <input type="date" name="" id="input-date" value="" placeholder="----/--/--">
+                                </div>
+                                <div id="input-container">
+                                    <input type="button" name="" id="convert-output" value="تبدیل">
+                                </div>
+                            </div>
+                            <div id="time-output">
+                                <span>20</span>
+                                <span>5</span>
+                                <span>2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: -20px;" class="date-container">
+                        <div class="date-claendar">
+                            <div class="main-date">
+                                <div id="input-container">
+                                    <input type="date" name="" id="input-date-2" value="" placeholder="تبدیل میلادی به شمسی">
+                                </div>
+                                <div id="input-container">
+                                    <input type="button" name="" id="convert-output-2" value="تبدیل">
+                                </div>
+                            </div>
+                            <div id="time-output-2">
+                                <span>20</span>
+                                <span>5</span>
+                                <span>2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="travel-club-card">
+                    <div class="travel-club-card-img">
+                        <img src="./icons/wheather.png" alt="TCicon">
+                        <a class="travel-club-card-title" href="#">هواشناسی</a>
+                    </div>
+                    <div style="margin-top: -20px;" class="travel-club-card-text">
+                        <span>توسط این بخش می تواند منطقه یا مناطق جغرافیایی را جهت نمایش وضعیت آب هوایی انتخاب نماید.تا در زمان گردش بیشترین لذت را از مسافرت خود داشته باشید.</span>
+                    </div>
+                    <div class="travel-club-card-btns">
+                        <button style="margin-top: -15px;" class="travel_btn"><a href="./whether/index.html">هواشناسی</a></button>
+                    </div>
+                </div>
+                <div class="travel-club-card">
+                    <div class="travel-club-card-img">
+                        <img src="./icons/coin.png" alt="TCicon">
+                        <a class="travel-club-card-title" href="#">نرخ ارز</a>
+                    </div>
+                    <div style="margin-top: -20px;" class="travel-club-card-text">
+                        <span>توسط این بخش شما می تواند بروز ترین ، آخرین نرخ لحظه ای ارزهای انتخابی خود را بر اساس ارز مرجع،مشاهده نمایید. تا در زمان گردش بیشترین لذت را از مسافرت خود داشته باشید</span>
+                    </div>
+                    <div class="travel-club-card-btns">
+                        <button style="margin-top: -15px;" class="travel_btn">نرخ ارز</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mmm">
+        <div class="myfooter container-fluid">
+            <div class="myfooter-list">
+                <div class="footer-list-text">
+                    <h5>مسیرهای پر تردد داخلی از تهران</h5>
+                    <div class="footer-list-divider"></div>
+                </div>
+                <ul class="footer-list">
+                    <li class="footer-list-link"><a href="#">پرواز به مشهد</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به اهواز</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به کرمانشاه</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به اردبیل</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به تبریز</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به یزد</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به گیلان</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به بندرعباس</a></li>
+                </ul>
+            </div>
+            <div class="myfooter-list">
+                <div class="footer-list-text">
+                    <h5>مسیرهای پر تردد خارجی از تهران</h5>
+                    <div class="footer-list-divider"></div>
+                </div>
+                <ul class="footer-list">
+                    <li class="footer-list-link"><a href="#">پرواز به استانبول</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به بمبئی</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به برلین</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به قاهره</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به دبی</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به پاریس</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز به لندن</a></li>
+                    <li style="opacity: 0;" class="footer-list-link"><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="myfooter-list">
+                <div class="footer-list-text">
+                    <h5>خدمات توریستی</h5>
+                    <div class="footer-list-divider"></div>
+                </div>
+                <ul class="footer-list">
+                    <li class="footer-list-link"><a href="#">تور</a></li>
+                    <li class="footer-list-link"><a href="#">هتل</a></li>
+                    <li class="footer-list-link"><a href="#">قطار</a></li>
+                    <li class="footer-list-link"><a href="#">تفریحات</a></li>
+                    <li class="footer-list-link"><a href="#">پرواز</a></li>
+                    <li class="footer-list-link"><a href="#">ویزا</a></li>
+                    <li class="footer-list-link"><a href="#">اتوبوس</a></li>
+                    <li class="footer-list-link"><a href="#">خودرو</a></li>
+                </ul>
+            </div>
+            <div class="myfooter-about">
+                <div class="footer-list-text">
+                    <h5>ارتباط با ما</h5>
+                    <div class="footer-list-divider"></div>
+                </div>
+                <div class="about-list">
+                    <div class="divadress">
+                        <svg style="width: 20px; height:20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M8.161 2.58a1.875 1.875 0 011.678 0l4.993 2.498c.106.052.23.052.336 0l3.869-1.935A1.875 1.875 0 0121.75 4.82v12.485c0 .71-.401 1.36-1.037 1.677l-4.875 2.437a1.875 1.875 0 01-1.676 0l-4.994-2.497a.375.375 0 00-.336 0l-3.868 1.935A1.875 1.875 0 012.25 19.18V6.695c0-.71.401-1.36 1.036-1.677l4.875-2.437zM9 6a.75.75 0 01.75.75V15a.75.75 0 01-1.5 0V6.75A.75.75 0 019 6zm6.75 3a.75.75 0 00-1.5 0v8.25a.75.75 0 001.5 0V9z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="adress">تهران - خیابان مطهری، بالاتر از خیابان مهرداد، پلاک 180 , واحد یک</span>  
+                    </div>
+                    <div>
+                        <svg style="width: 20px; height:20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
+                        </svg>
+                        <span dir="ltr">0513 - *** - 010</span>
+                    </div>
+                    <div>
+                        <svg style="width: 20px; height:20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M10.5 18.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" />
+                            <path fill-rule="evenodd" d="M8.625.75A3.375 3.375 0 005.25 4.125v15.75a3.375 3.375 0 003.375 3.375h6.75a3.375 3.375 0 003.375-3.375V4.125A3.375 3.375 0 0015.375.75h-6.75zM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 017.5 19.875V4.125z" clip-rule="evenodd" />
+                        </svg>
+                        <span dir="ltr">0915 - *** - 5185</span>
+                    </div>
+                    <div>
+                        <svg style="width: 20px; height:20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                        <span>adklcneicm@gmial.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider">
+
+        </div>
+    </div>  
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/navbar.js"></script>
+<script src="./js/card.js"></script>
+<script src="./js/date-conv.js"></script>
+<script src="./js/apibox.js"></script>
+<script src="./date/jquery.js"></script>
+<script src="./date/kamadatepicker.min.js"></script>
+<script>
+    let opt = {
+        placeholder : "تاریخ حرکت",
+        forceFarsiDigits : true,
+        markHolidays : true,
+        markToday : true,
+        gotoToday : true,
+    }
+    let opt2 = {
+        placeholder : "تاریخ برگشت",
+        forceFarsiDigits : true,
+        markHolidays : true,
+        markToday : true,
+        gotoToday : true,
+    }
+    kamaDatepicker('AirStrTime',opt);
+    kamaDatepicker('TrStrTime',opt);
+    kamaDatepicker('FlyStrTime',opt);
+    kamaDatepicker('HoStrTime',opt);
+    kamaDatepicker('BusStrTime',opt);
+    kamaDatepicker('AirEndTime',opt2);
+    kamaDatepicker('TrEndTime',opt2);
+    kamaDatepicker('FlyEndTime',opt2);
+    kamaDatepicker('HoEndTime',opt2);
+</script>
+</html>
