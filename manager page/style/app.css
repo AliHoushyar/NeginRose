@@ -10,6 +10,11 @@
     box-sizing: border-box;
     font-family: "shabnam",sans-serif;
 }
+
+body{
+    background-color: #E4E9F7;
+}
+
 .sidebar{
     position: fixed;
     right: 0;
@@ -247,7 +252,7 @@
     color: #11101d;
     font-size: 25px;
     font-weight: 500;
-    margin: 18px
+    /* margin: 18px */
 }
 @media (max-width: 420px) {
     .sidebar li .tooltip{

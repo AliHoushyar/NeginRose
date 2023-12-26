@@ -8,3 +8,9 @@ myBtn.addEventListener("click",event => {
 
     console.log(data);
 });
+
+const loaderElem = document.querySelector('.loader');
+
+window.addEventListener('load', function(){
+    loaderElem.classList.add('hidden');
+})

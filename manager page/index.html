@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./style/app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/top_card.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
    </head>
 <body>
     <div class="sidebar">
@@ -93,8 +96,150 @@
         </ul>
     </div>
     <section class="home-section">
-        <div class="text">Dashboard</div>
+        <div class="info-box">
+            <div class="card_box">
+                <div class="card_title">
+                    <span class="top_card_title">میزان فروش | </span>
+                    <span class="top_card_date">امروز</span>
+                </div>
+                <div class="top_card_img">
+                    <div class="top_card_logo">
+                        <img class="card_basket" src="./img/basket.png" alt="bask">
+                    </div>
+                    <div class="top_card_text">
+                        <span class="top_card_text_quantity">4.2M</span>
+                        <span class="top_card_diff">12% افزایش</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card_box">
+                <div class="card_title">
+                    <span class="top_card_title">بازدید سایت | </span>
+                    <span class="top_card_date">امروز</span>
+                </div>
+                <div class="top_card_img">
+                    <div class="top_card_logo">
+                        <img class="card_basket" src="./img/mouse.png" alt="bask">
+                    </div>
+                    <div class="top_card_text">
+                        <span class="top_card_text_quantity">4.2M</span>
+                        <span class="top_card_diff">12% افزایش</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card_box">
+                <div class="card_title">
+                    <span class="top_card_title">تعداد اعضا | </span>
+                    <span class="top_card_date">امروز</span>
+                </div>
+                <div class="top_card_img">
+                    <div class="top_card_logo">
+                        <img class="card_basket" src="./img/member.png" alt="bask">
+                    </div>
+                    <div class="top_card_text">
+                        <span class="top_card_text_quantity">4.2M</span>
+                        <span class="top_card_diff">12% افزایش</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card_box">
+                <div class="card_title">
+                    <span class="top_card_title">درآمد | </span>
+                    <span class="top_card_date">امروز</span>
+                </div>
+                <div class="top_card_img">
+                    <div class="top_card_logo">
+                        <img class="card_basket" src="./img/dollar.png" alt="bask">
+                    </div>
+                    <div class="top_card_text">
+                        <span class="top_card_text_quantity">4.2M</span>
+                        <span class="top_card_diff">12% افزایش</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top_sells_and_sell_chart">
+            <div class="top_sells">
+                <span>تور های پرفروش</span>
+                <div class="sell_one_row">
+                    <div class="sell_img">
+                        <img src="./img/istanbul.jpg" alt="sellimg">
+                    </div>
+                    <div class="sell_description">
+                        <div class="sell_dis_info">
+                            <span>تور استانبول</span>
+                            <span>2,345,678 تومان</span>
+                        </div>
+                        <div class="sell_main">
+                            <p>تعداد : <span class="number_of_sells">265</span></p>
+                            <p>برگشتی : <span class="number_of_sells">12,486</span> تومان</p>
+                            <p>سود : <span class="number_of_sells">28,000</span> تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sell_one_row">
+                    <div class="sell_img">
+                        <img src="./img/dubai.jpg" alt="sellimg">
+                    </div>
+                    <div class="sell_description">
+                        <div class="sell_dis_info">
+                            <span>تور دبی</span>
+                            <span>2,345,678 تومان</span>
+                        </div>
+                        <div class="sell_main">
+                            <p>تعداد : <span class="number_of_sells">265</span></p>
+                            <p>برگشتی : <span class="number_of_sells">12,486</span> تومان</p>
+                            <p>سود : <span class="number_of_sells">28,000</span> تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sell_one_row">
+                    <div class="sell_img">
+                        <img src="./img/kish.jpg" alt="sellimg">
+                    </div>
+                    <div class="sell_description">
+                        <div class="sell_dis_info">
+                            <span>تور کیش</span>
+                            <span>2,345,678 تومان</span>
+                        </div>
+                        <div class="sell_main">
+                            <p>تعداد : <span class="number_of_sells">265</span></p>
+                            <p>برگشتی : <span class="number_of_sells">12,486</span> تومان</p>
+                            <p>سود : <span class="number_of_sells">28,000</span> تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sell_chart">
+                <span>نمودار فروش</span>
+                <canvas id="myChart" style="width:100%;max-width:600px;margin-top: 20px;"></canvas>
+            </div>
+        </div>
     </section>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        const xValues = ['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
+        const yValues = [7,8,13,14,9,9,10,7,14,16,13,18];
+        new Chart("myChart", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [{
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgb(104, 38, 134)",
+              borderColor: "rgb(104, 38, 134,0.2)",
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            scales: {
+              yAxes: [{ticks: {min: 0, max:20}}],
+            }
+          }
+        });
+        </script>
 </body>
 </html>
