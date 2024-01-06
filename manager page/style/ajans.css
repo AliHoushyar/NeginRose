@@ -116,7 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     height: 80px;
     border-radius: 15px;
     padding-left: 10px;
@@ -134,7 +134,7 @@
     transform: translateY(-5px);
 }
 
-.ajansName ,.ajansLoc{
+.ajansName ,.ajansLoc ,.ajansNickname{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -172,6 +172,7 @@
     width: 40px;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .pageButtens{
@@ -179,7 +180,8 @@
     align-items: center;
     gap: 5px;
     margin: 20px auto;
-    width: 10%;
+    width: 90%;
+    justify-content: center;
 }
 
 .active{

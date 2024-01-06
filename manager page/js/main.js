@@ -1,3 +1,9 @@
+const loaderElem = document.querySelector('.loader');
+
+window.addEventListener('load', function(){
+    loaderElem.classList.add('hidden');
+})
+
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
 let searchBtn = document.querySelector(".bx-search");
