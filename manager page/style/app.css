@@ -250,10 +250,49 @@ body{
 .home-section .text{
     display: inline-block;
     color: #11101d;
-    font-size: 25px;
-    font-weight: 500;
+    /* font-size: 25px; */
+    /* font-weight: 500; */
     /* margin: 18px */
 }
+
+.drp{
+    width: 100%;
+}
+
+.dropdown-container{
+    display: none;
+    background-color: #24223d;
+}
+
+.dropdown-container a{
+    color: #FFF;
+    background-color: #24223d !important;
+    height: 40px !important;
+    padding-right: 20px;
+}
+
+.dropdown-container a:hover{
+    color: #11101D;
+    background-color: #FFF !important;
+}
+
+.dropdown-container2{
+    /* display: none; */
+    background-color: #24223d;
+}
+
+.dropdown-container2 a{
+    color: #FFF;
+    background-color: #24223d !important;
+    height: 40px !important;
+    padding-right: 20px;
+}
+
+.dropdown-container2 a:hover{
+    color: #11101D;
+    background-color: #FFF !important;
+}
+
 @media (max-width: 420px) {
     .sidebar li .tooltip{
         display: none;

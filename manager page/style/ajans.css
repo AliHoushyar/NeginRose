@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "shabnam";
+    src: url("/fonts/Shabnam-FD.woff2") format("woff2");
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "shabnam",sans-serif;
+}
+
+.topbar{
+    width: 100%;
+    background-color: white;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+}
+
+.searchBar i{
+    font-size: 30px;
+}
+
+.searchBar input{
+    height: 60px;
+    width: 100%;
+    font-size: 16px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.backbtn{
+    color: white;
+    background-color: #723c80;
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.bookmarkBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgb(187, 187, 187);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: normal !important;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(223, 125, 255), rgb(174, 74, 255));
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.3s;
+}
+
+.iconn {
+  border-radius: 1px;
+}
+
+.text {
+  /* height: 100%; */
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 1.04em;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
+}
+
+.ajans_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 80px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(198, 198, 198);
+    margin: 0px auto;
+    transition: all 250ms ease-in-out;
+}
+
+.ajans_container:hover{
+    box-shadow: 9px 8px 34px -10px rgba(96,96,96,0.62);
+    -webkit-box-shadow: 9px 8px 34px -10px rgba(96,96,96,0.62);
+    -moz-box-shadow: 9px 8px 34px -10px rgba(96,96,96,0.62);
+    transform: translateY(-5px);
+}
+
+.ajansName ,.ajansLoc{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ajansEdit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.titlee{
+    color: rgb(92, 92, 92);
+    font-size: 14px;
+}
+
+.cap{
+    font-size: 18px;
+}
+
+.pageContent{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pageBtn{
+    background-color: rgb(99, 0, 138);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pageButtens{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 20px auto;
+    width: 10%;
+}
+
+.active{
+    background-color: #cc00ff;
+}
