@@ -29,23 +29,23 @@ function showSlides(n) {
     slides[n-1].style.color = "white";
     switch (n){
         case 1:
-            imgb.style.backgroundImage = "url(./img/plain2.jpg)";
+            imgb.style.backgroundImage = "url(./img/plain3.jpg)";
             document.getElementById('airplain-btn').src = "./icons/plain-logo-2.png";
             break;
         case 2:
-            imgb.style.backgroundImage = "url('./img/hotel.jpg')";
+            imgb.style.backgroundImage = "url('./img/hotel2.jpg')";
             document.getElementById('hotel-btn').src = "./icons/hotel-logo-2.png";
             break;
         case 3:
-            imgb.style.backgroundImage = "url('./img/port.jpg')";
+            imgb.style.backgroundImage = "url('./img/port2.jpg')";
             document.getElementById('fly-btn').src = "./icons/fly-logo-2.png";
             break; 
         case 4:
-            imgb.style.backgroundImage = "url('./img/train2.jpg')";
+            imgb.style.backgroundImage = "url('./img/train3.jpg')";
             document.getElementById('train-btn').src = "./icons/train-logo-2.png";
             break;
         case 5:
-            imgb.style.backgroundImage = "url('./img/bus.jpg')";
+            imgb.style.backgroundImage = "url('./img/bus2.jpg')";
             document.getElementById('bus-btn').src = "./icons/bus-logo-2.png";
             break;
         case 6:
